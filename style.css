@@ -1,0 +1,328 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e0e1dd;;
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    height: 86.9vh;
+    background: url(img/image1.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+    font-family: 'Kanit', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+nav {
+    position: sticky;
+    top: 0%;
+    width: 100%;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 5px #929292;
+}
+nav ul {
+    line-height: 40px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #787878;
+    padding: 0;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+nav ul li a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'dosis', sans-serif;
+    
+}
+nav ul li a:hover {
+    background-size: 0 2px, 100% 2px;
+    color: #778da9;
+    transition: background-size 400ms;
+    transition: 0.3s;
+
+}
+@media(max-width: 786px) {
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+}
+/* text-button */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+
+}
+.button {
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+  /* button styling */
+.button {
+    --border-right: px;
+    --text-stroke-color: rgba(255, 255, 255, 0.897);
+    --animation-color: #3470b1;
+    --fs-size: 3.0em;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+  /* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.6s;
+    -webkit-text-stroke: 1.1px var(--animation-color);
+}
+  /* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--animation-color))
+}
+/* web-developer button */
+.my-icons {
+    width: 29px !important;
+    height: 29px !important;
+    margin-left: 8px;
+}
+.jc-web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+.jc-web button {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgba(76, 51, 153, 0);
+    border: solid 4px rgba(255, 213, 0, 0);
+    font-family: inherit;
+    
+}
+
+.default-btn,.hover-btn {
+    background-color: rgba(76, 51, 153, 0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.hover-btn {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(48, 47, 49, 0);
+    transform: translate(0%,100%);
+} 
+.default-btn span {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5qem;
+}
+.hover-btn span {
+    color: transparent;
+}
+.jc-web button:hover .default-btn {
+    transform: translate(0%,-100%);
+}
+.jc-web button:hover .hover-btn {
+    transform: translate(0%,0%);
+}
+
+/* about container */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+    height: 100%;
+}
+.my-name{
+    font-weight: bolder;
+    color: #1b263b;
+    font-size: 1.3em;
+}
+.inside-container { 
+    font-size: 14px;
+    font-family: "Source Sans Pro",sans-serif;
+    text-align: left;
+    padding: 40px;
+    color: #444444;
+    width: 299px;
+    box-shadow: 0px 4px 2px 0px  #384057bd ;
+    height: 385px;
+    margin-top: 70px;
+    margin-right: 2px;
+}
+.dot-1 {
+    height: 11px;
+    width: 11px;
+    background-color: #415a77;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-2{
+    height: 11px;
+    width: 11px;
+    background-color: #1b263b;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-3{
+    height: 11px;
+    width: 11px;
+    background-color: #0d1b2a;
+    border-radius: 50%;
+    display: inline-block;
+}
+.btn-cv{
+    display: inline-block;
+    color: #415a77;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    border-radius: 0.25rem;
+    text-align: center;
+    vertical-align: middle;
+}
+/* my resume */
+progress{
+    accent-color: #415a77;
+}
+
+/* project container */
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.gallery{
+    font-size: 14px;
+    font-family: "Source Sans Pro",sans-serif;
+    text-align: left;
+    padding: 30px;
+    border-radius: 26px;
+    color: #444444;
+    background-color:   #3470b144 ;
+    width: 200px;
+    border: 1px solid gray;
+    margin-right: 5px;
+    height: 300px;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+.inside-img{
+    border-radius: 6px ;
+}
+.inside-img:hover {
+    opacity: 0.5;
+}
+
+/* hireme button */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1b2a;
+    padding-top: 30px;
+}
+.btn-hire {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1b2a;
+    padding-bottom: 30px;
+}
+.text-light {
+    font-size: 36px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.btn-hireme {
+    --width: 120px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #000000ad;
+    font-weight: bold;
+    font-size: 0.9em;
+    background: rgb(255, 255, 255);
+    transition: all 1.2s;
+    border-radius: 5px;
+    margin-top: 17px;
+}
+.btn-hireme:hover {
+    color: #1b263b;
+    transform: scale(1.1) translateY(-1px);
+}
